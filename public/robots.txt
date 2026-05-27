@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nkycrawlspacepros.com/sitemap-index.xml
