@@ -70,7 +70,7 @@ export const siteConfig = {
   brandColor: "#1a6bb5",
 
   // ── Hero content ─────────────────────────────────────────────────
-  heroTagline: "Northern Kentucky's Trusted Crawl Space Repair Service",
+  heroTagline: "Northern Kentucky Crawl Space Repair Service",
   heroSubtext: "Protect your home from moisture, mold, and structural damage. Call for a free inspection.",
   heroAlt: "Professional crawl space repair technician at work",
 
@@ -91,7 +91,7 @@ export const siteConfig = {
       title: "Crawl Space Encapsulation",
       slug: "encapsulation",
       description:
-        "Complete vapor barrier installation, sealing your crawl space from moisture. Reduces humidity, prevents mold, lowers energy bills. The #1 crawl space solution for NKY homes.",
+        "Complete vapor barrier installation, sealing your crawl space from moisture. Reduces humidity, prevents mold, lowers energy bills. A crawl space solution for NKY homes.",
       photo: "/photos/residential.jpg",
     },
     {
@@ -105,7 +105,7 @@ export const siteConfig = {
       title: "Crawl Space Mold Remediation",
       slug: "mold-remediation",
       description:
-        "Professional mold removal and treatment in crawl spaces. We kill existing mold, treat affected wood, and prevent regrowth. Safe for your family and pets.",
+        "Professional mold removal and treatment in crawl spaces. We kill existing mold, treat affected wood, and prevent regrowth. Safe for your home.",
       photo: "/photos/screen-cleaning.jpg",
     },
   ] as Service[],
@@ -115,7 +115,7 @@ export const siteConfig = {
     {
       question: "How much does crawl space encapsulation cost?",
       answer:
-        "$3,000-$8,000 depending on size. Call (859) 555-0500 for a free inspection and estimate.",
+        "Contact us for a free inspection and estimate. Call (859) 555-0500.",
     },
     {
       question: "How do I know if my crawl space needs repair?",
@@ -178,7 +178,7 @@ export const siteConfig = {
       lat: "39.0458",
       lng: "-84.5533",
       intro:
-        "Fort Mitchell is one of Northern Kentucky's most desirable communities, and homeowners here expect a higher standard of service. NKY Crawl Space Pros delivers exactly that. We specialize in the kind of meticulous, detail-oriented crawl space repair that Fort Mitchell properties deserve — from the stately homes along Dixie Highway to the well-maintained colonials in the residential side streets. Our technicians are background-checked, fully insured, and trained to treat your home with the same respect they'd treat their own. Fort Mitchell residents choose us because we show up on time, do the job right, and leave every crawl space clean and dry.",
+        "Fort Mitchell is one of Northern Kentucky's most desirable communities, and homeowners here expect professional service. NKY Crawl Space Pros delivers exactly that. We specialize in the kind of meticulous, detail-oriented crawl space repair that Fort Mitchell properties deserve — from the stately homes along Dixie Highway to the well-maintained colonials in the residential side streets. Our technicians are background-checked, fully insured, and trained to treat your home with the same respect they'd treat their own. Fort Mitchell residents choose us because we show up on time, do the job right, and leave every crawl space clean and dry.",
     },
     {
       name: "Erlanger, KY",
@@ -242,7 +242,7 @@ export const siteConfig = {
       lat: "39.0003",
       lng: "-84.5013",
       intro:
-        "Taylor Mill has grown into a thriving community, and NKY Crawl Space Pros is proud to protect the homes and businesses that make this city special. From the established neighborhoods along Taylor Mill Road to the newer developments spreading across the city, we provide crawl space repair that Taylor Mill residents trust. Our team understands the local environment — the clay soil that retains moisture, the seasonal water table changes, and the way Northern Kentucky's climate affects your crawl space throughout the year. We tailor our approach to each property, ensuring the best possible results every single time.",
+        "Taylor Mill has grown into a thriving community, and NKY Crawl Space Pros is proud to protect the homes and businesses that make this city special. From the established neighborhoods along Taylor Mill Road to the newer developments spreading across the city, we provide crawl space repair that Taylor Mill residents trust. Our team understands the local environment — the clay soil that retains moisture, the seasonal water table changes, and the way Northern Kentucky's climate affects your crawl space throughout the year. We tailor our approach to each property, ensuring great results every time.",
     },
     {
       name: "Villa Hills, KY",
@@ -250,7 +250,7 @@ export const siteConfig = {
       lat: "39.0625",
       lng: "-84.5916",
       intro:
-        "Villa Hills is one of Northern Kentucky's premier residential communities, and the homes here deserve nothing less than the best. NKY Crawl Space Pros delivers premium crawl space repair services that match Villa Hills' high standards. The city's elevated terrain and river-adjacent location mean your crawl space faces unique challenges — fluctuating water tables, seasonal humidity, and moisture intrusion from the Ohio River floodplain. Our team is equipped to handle all of it, using professional-grade materials and techniques that keep your crawl space permanently dry. Villa Hills homeowners trust us because we never cut corners.",
+        "Villa Hills is one of Northern Kentucky's premier residential communities, and the homes here deserve quality service. NKY Crawl Space Pros delivers premium crawl space repair services that match Villa Hills' high standards. The city's elevated terrain and river-adjacent location mean your crawl space faces unique challenges — fluctuating water tables, seasonal humidity, and moisture intrusion from the Ohio River floodplain. Our team is equipped to handle all of it, using professional-grade materials and techniques that keep your crawl space permanently dry. Villa Hills homeowners trust us because we never cut corners.",
     },
     {
       name: "Crescent Springs, KY",
@@ -307,7 +307,7 @@ export const siteConfig = {
       lat: "39.2289",
       lng: "-84.3541",
       intro:
-        "Montgomery's tree-canopied streets and stately homes make it one of the Cincinnati area's premier residential communities. NKY Crawl Space Pros extends our premium crawl space repair services to Montgomery homeowners who expect nothing but the best. The large lots, mature landscaping, and multi-story homes throughout Montgomery require a careful, experienced approach — and our team delivers exactly that. From historic properties near the downtown village center to sprawling estates on the outskirts, we bring the same meticulous attention to detail that has made us Northern Kentucky's most trusted crawl space repair service.",
+        "Montgomery's tree-canopied streets and stately homes make it one of the Cincinnati area's premier residential communities. NKY Crawl Space Pros extends our premium crawl space repair services to Montgomery homeowners who expect quality service. The large lots, mature landscaping, and multi-story homes throughout Montgomery require a careful, experienced approach — and our team delivers exactly that. From historic properties near the downtown village center to sprawling estates on the outskirts, we bring the same meticulous attention to detail on every job. crawl space repair service.",
     },
     {
       name: "Deer Park, OH",
@@ -315,7 +315,7 @@ export const siteConfig = {
       lat: "39.2053",
       lng: "-84.3922",
       intro:
-        "Deer Park is a welcoming, family-friendly community just north of Cincinnati, and NKY Crawl Space Pros is proud to bring our crawl space repair services to this great neighborhood. From the well-kept ranch homes along Blue Ash Road to the two-story colonials in the residential side streets, Deer Park homes deserve crawl spaces that are dry, clean, and structurally sound. We offer flexible scheduling, fair pricing, and the kind of dependable service that Deer Park homeowners appreciate. A healthy crawl space makes a real difference in your home's air quality and energy efficiency — and we deliver every time.",
+        "Deer Park is a welcoming, family-friendly community just north of Cincinnati, and NKY Crawl Space Pros is proud to bring our crawl space repair services to this great neighborhood. From the well-kept ranch homes along Blue Ash Road to the two-story colonials in the residential side streets, Deer Park homes deserve crawl spaces that are dry, clean, and structurally sound. We offer flexible scheduling, Flexible scheduling, and the kind of dependable service that Deer Park homeowners appreciate. A healthy crawl space makes a real difference in your home's air quality and energy efficiency — and we deliver every time.",
     },
     {
       name: "Amberly, OH",
@@ -387,7 +387,7 @@ export const siteConfig = {
   testimonials: [
     {
       quote:
-        "NKY Crawl Space Pros encapsulated our crawl space in Florence. The musty smell in our house is completely gone and our floors are no longer cold in winter. Best investment we've made.",
+        "NKY Crawl Space Pros encapsulated our crawl space in Florence. The musty smell in our house is completely gone and our floors are no longer cold in winter. Quality investment we've made.",
       name: "Jennifer M.",
       city: "Florence, KY",
     },
@@ -399,7 +399,7 @@ export const siteConfig = {
     },
     {
       quote:
-        "Our crawl space had mold everywhere. NKY Crawl Space Pros removed it all, treated the wood, and installed a vapor barrier. Our air quality improved immediately.",
+        "Our crawl space had mold everywhere. NKY Crawl Space Pros removed it all, treated the wood, and installed a vapor barrier. Our home feels better.",
       name: "Sarah K.",
       city: "Fort Mitchell, KY",
     },
@@ -416,7 +416,7 @@ export const siteConfig = {
     {
       name: "Jennifer M.",
       location: "Florence, KY",
-      text: "NKY Crawl Space Pros encapsulated our crawl space in Florence. The musty smell in our house is completely gone and our floors are no longer cold in winter. The team was professional and cleaned up everything when they were done. Best investment we've made in our home.",
+      text: "NKY Crawl Space Pros encapsulated our crawl space in Florence. The musty smell in our house is completely gone and our floors are no longer cold in winter. The team was professional and cleaned up everything when they were done. Quality investment we've made in our home.",
     },
     {
       name: "Robert T.",
@@ -426,7 +426,7 @@ export const siteConfig = {
     {
       name: "Sarah K.",
       location: "Fort Mitchell, KY",
-      text: "Our crawl space had mold everywhere. We could smell it in the house and our allergies were getting worse. NKY Crawl Space Pros removed all the mold, treated the wood, and installed a vapor barrier. Our air quality improved immediately. Can't thank them enough.",
+      text: "Our crawl space had mold everywhere. We could smell it in the house and our allergies were getting worse. NKY Crawl Space Pros removed all the mold, treated the wood, and installed a vapor barrier. Our home feels better. Can't thank them enough.",
     },
     {
       name: "Mike D.",
@@ -436,12 +436,12 @@ export const siteConfig = {
     {
       name: "Jennifer P.",
       location: "Independence, KY",
-      text: "We just moved into a home in Independence and the crawl space was a mess — standing water, mold, no vapor barrier. NKY Crawl Space Pros came out, assessed everything, and gave us a fair price. They fixed it all. Our crawl space is now clean, dry, and sealed. Highly recommend.",
+      text: "We just moved into a home in Independence and the crawl space was a mess — standing water, mold, no vapor barrier. NKY Crawl Space Pros came out, assessed everything, and gave us a competitive price. They fixed it all. Our crawl space is now clean, dry, and sealed. Highly recommend.",
     },
     {
       name: "Dave S.",
       location: "Newport, KY",
-      text: "Called for crawl space waterproofing on our home in Newport. They gave us a fair price and came out the same week. They installed a sump pump and drainage system that finally stopped the water intrusion. Great service, great price. Our basement and crawl space are finally dry.",
+      text: "Called for crawl space waterproofing on our home in Newport. They gave us a competitive price and came out the same week. They installed a sump pump and drainage system that finally stopped the water intrusion. Great service, great service. Our basement and crawl space are finally dry.",
     },
     {
       name: "Karen L.",
@@ -451,7 +451,7 @@ export const siteConfig = {
     {
       name: "Tom W.",
       location: "Fort Thomas, KY",
-      text: "Our Fort Thomas home had a damp crawl space causing musty odors upstairs. NKY Crawl Space Pros installed a vapor barrier and dehumidifier. The musty smell is completely gone and our home feels much healthier. Best crawl space service in NKY.",
+      text: "Our Fort Thomas home had a damp crawl space causing musty odors upstairs. NKY Crawl Space Pros installed a vapor barrier and dehumidifier. The musty smell is completely gone and our home feels much healthier. Professional crawl space service in NKY.",
     },
   ] as { name: string; location: string; text: string }[],
 };
