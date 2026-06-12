@@ -34,8 +34,8 @@ export interface Testimonial {
 export const siteConfig = {
   // ── Business identity ──────────────────────────────────────────────
   businessName: "NKY Crawl Space Pros",
-  phone: "(859) 555-0500",
-  phoneE164: "+18595550500",
+  phone: "(859) 900-8065",
+  phoneE164: "+18599008065",
   domain: "nkycrawlspacepros.com",
   siteUrl: "https://nkycrawlspacepros.com",
 
@@ -106,7 +106,7 @@ export const siteConfig = {
       slug: "mold-remediation",
       description:
         "Professional mold removal and treatment in crawl spaces. We kill existing mold, treat affected wood, and prevent regrowth. Safe for your home.",
-      photo: "/photos/screen-cleaning.jpg",
+      photo: "/photos/mold-remediation.jpg",
     },
   ] as Service[],
 
@@ -115,7 +115,7 @@ export const siteConfig = {
     {
       question: "How much does crawl space encapsulation cost?",
       answer:
-        "Contact us for a free inspection and estimate. Call (859) 555-0500.",
+        "Contact us for a free inspection and estimate. Call (859) 900-8065.",
     },
     {
       question: "How do I know if my crawl space needs repair?",
@@ -150,7 +150,7 @@ export const siteConfig = {
     {
       question: "How do I schedule?",
       answer:
-        "Call (859) 555-0500. We serve all of Northern Kentucky and greater Cincinnati.",
+        "Call (859) 900-8065. We serve all of Northern Kentucky and greater Cincinnati.",
     },
   ] as FAQ[],
 

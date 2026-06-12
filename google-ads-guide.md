@@ -188,7 +188,7 @@ Book Your Free Quote Now
 Satisfaction Guaranteed
 Trusted by 500+ Homeowners
 Fast & Affordable Service
-Call (859) 555-0100
+Call (859) 900-8065
 Serving All of NKY
 ```
 

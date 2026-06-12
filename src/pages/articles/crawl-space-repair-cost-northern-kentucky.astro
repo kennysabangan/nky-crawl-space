@@ -1,0 +1,373 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import QuestionHeading from '../../components/QuestionHeading.astro';
+import ArticleSection from '../../components/ArticleSection.astro';
+import EnhancedFAQ from '../../components/EnhancedFAQ.astro';
+import { siteConfig } from '../../config';
+
+const { businessName, phone, phoneE164, city, region } = siteConfig;
+
+const title = `Average Crawl Space Repair Cost in Northern Kentucky (2025 Guide) | ${businessName}`;
+const description = "What does crawl space repair actually cost in Northern Kentucky? Local pricing data for encapsulation, vapor barriers, structural repairs, mold remediation, and foundation work in Florence, Covington, and NKY.";
+
+const articleFAQs = [
+  {
+    question: "How much does crawl space encapsulation cost in Northern Kentucky?",
+    answer: "Full crawl space encapsulation in Northern Kentucky typically costs $4,500 to $8,500 for an average 1,200-1,500 square foot crawl space. This includes vapor barrier installation (10-20 mil reinforced polyethylene), sealed foundation vents, insulated walls, and a dehumidifier. Smaller crawl spaces (800 sq ft) run $3,000-5,500, while larger spaces (2,000+ sq ft) can reach $10,000-15,000. Florence and Covington prices tend to be consistent across the region."
+  },
+  {
+    question: "Is crawl space encapsulation worth the cost in NKY?",
+    answer: "Yes — especially in Northern Kentucky's humid climate. Encapsulation prevents mold growth, reduces humidity-related structural damage, lowers energy bills (10-20% savings on heating/cooling), improves indoor air quality, and protects your foundation. Most NKY homeowners see payback within 5-7 years through energy savings and avoided repair costs. Homes with recurring moisture problems, musty odors, or high humidity benefit the most."
+  },
+  {
+    question: "How much does crawl space structural repair cost?",
+    answer: "Structural crawl space repairs in Northern Kentucky vary by problem: sagging floor joists ($1,500-4,000 to sister or replace sections), rotted sill plates ($2,000-6,000 depending on extent), support beam replacement ($1,200-3,500 per beam), and SmartJack or adjustable steel post installation ($300-500 each, typically need 4-8 posts). Foundation crack sealing adds $500-2,500. Most structural jobs run $3,000-8,000 total for moderate damage."
+  },
+  {
+    question: "Does homeowner's insurance cover crawl space repairs in Kentucky?",
+    answer: "Usually not. Standard homeowner's insurance in Kentucky excludes foundation settling, water damage from poor drainage or humidity, and maintenance-related issues like wood rot. Insurance MAY cover crawl space damage if caused by a sudden, covered event (burst pipe, fire, windstorm). Flood damage requires separate flood insurance. Always file a claim to check, but plan to pay out-of-pocket for most crawl space repairs in Northern Kentucky."
+  },
+  {
+    question: "How long does crawl space repair take in NKY?",
+    answer: "Timeline depends on scope: vapor barrier installation alone takes 1-2 days for most crawl spaces. Full encapsulation (vapor barrier, vent sealing, insulation, dehumidifier) typically requires 2-4 days. Structural repairs add 1-3 days depending on complexity. Mold remediation adds another 1-2 days. Most Northern Kentucky crawl space projects are completed within one week. Access issues (tight spaces, difficult entry) can extend timelines."
+  },
+  {
+    question: "Can I install a crawl space vapor barrier myself?",
+    answer: "Technically yes, but it's hard to do correctly. DIY vapor barrier kits cost $0.50-1.50 per square foot, so materials for a 1,200 sq ft crawl space run $600-1,800. However, proper installation requires overlapping seams 12+ inches, sealing all edges to walls with mechanical fasteners and tape, cutting around piers, and addressing existing moisture sources. Most DIY jobs fail within 2-3 years due to improper sealing or inadequate drainage prep. Professional installation costs more upfront but lasts 20+ years when done right."
+  },
+  {
+    question: "What's the difference between crawl space encapsulation and a vapor barrier?",
+    answer: "A vapor barrier is just one component (the plastic sheeting on the ground). Encapsulation is a complete system: 10-20 mil reinforced vapor barrier covering floor AND walls, sealed foundation vents, insulated crawl space walls, dehumidifier, and sometimes a sump pump. Vapor barriers alone slow moisture but don't eliminate it. Full encapsulation controls humidity year-round, which is critical in Northern Kentucky where summer humidity regularly exceeds 70%."
+  },
+  {
+    question: "Do I need a dehumidifier in my encapsulated crawl space?",
+    answer: "In Northern Kentucky, yes. Even with a sealed vapor barrier, humidity can enter through foundation walls (concrete is porous) and small air leaks. A crawl space dehumidifier keeps humidity below 55%, preventing mold growth and wood rot. Most NKY crawl spaces need a 70-90 pint/day unit ($1,200-2,000 installed). Skipping the dehumidifier saves money upfront but often leads to continued moisture problems and negates the benefits of encapsulation."
+  }
+];
+---
+
+<BaseLayout title={title} description={description}>
+
+<style>
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  @media (min-width: 769px) {
+    .container {
+      padding: 0 2rem;
+    }
+  }
+  
+  .article-header {
+    background: linear-gradient(135deg, #1a6bb5 0%, #155a96 100%);
+    color: #fff;
+    padding: 3rem 1rem;
+  }
+  
+  .article-header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+    max-width: 900px;
+  }
+  
+  .article-header p {
+    font-size: 1.1rem;
+    color: #cce4f7;
+    max-width: 700px;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  @media (min-width: 769px) {
+    .article-header {
+      padding: 4rem 2rem;
+    }
+    
+    .article-header h1 {
+      font-size: 2.25rem;
+    }
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+  
+  .data-table thead {
+    background: #1a6bb5;
+    color: #fff;
+  }
+  
+  .data-table th {
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  .data-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .data-table tbody tr:nth-child(even) {
+    background: #f8f9fa;
+  }
+  
+  .data-table tbody tr:hover {
+    background: #e8f4f8;
+  }
+  
+  .callout-box {
+    background: #e8f4f8;
+    border: 2px solid #1a6bb5;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .callout-box h3 {
+    color: #1a6bb5;
+    font-size: 1.25rem;
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .callout-box p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .callout-box p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .callout-box ul {
+    margin: 0.5rem 0 0 1.25rem;
+    color: #444;
+  }
+  
+  .callout-box li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta-section {
+    background: linear-gradient(135deg, #1a6bb5 0%, #155a96 100%);
+    color: #fff;
+    padding: 2.5rem 1.25rem;
+    text-align: center;
+    margin: 3rem 0 0 0;
+    border-radius: 12px;
+  }
+  
+  .cta-section h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .cta-section p {
+    color: #cce4f7;
+    font-size: 1rem;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    background: #fff;
+    color: #1a6bb5;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  }
+  
+  .price-note {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+</style>
+
+<header class="article-header">
+  <div class="container">
+    <h1>Average Crawl Space Repair Cost in Northern Kentucky (2025 Guide)</h1>
+    <p>Local pricing data for crawl space encapsulation, vapor barriers, structural repairs, mold remediation, and foundation work in Florence, Covington, Fort Mitchell, and across NKY.</p>
+  </div>
+</header>
+
+<article class="container">
+  
+  <ArticleSection tag="article">
+    <QuestionHeading question="How Much Does Crawl Space Repair Cost in Northern Kentucky?" />
+    
+    <p>Crawl space repair costs in Northern Kentucky range from $1,500 for a basic vapor barrier to $15,000+ for full encapsulation with structural repairs. The wide range reflects the variety of crawl space problems Northern Kentucky homes face: moisture intrusion from our humid summers, foundation settling in our clay soils, wood rot from inadequate ventilation, and mold growth from chronic dampness.</p>
+    
+    <p>Here's what homeowners across Florence, Covington, Fort Mitchell, and the rest of NKY are actually paying in 2025:</p>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Average Cost (NKY)</th>
+          <th>Typical Range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Vapor Barrier Installation (6 mil)</td>
+          <td>$1,500 – $3,000</td>
+          <td>Small to medium crawl space</td>
+        </tr>
+        <tr>
+          <td>Reinforced Vapor Barrier (10-20 mil)</td>
+          <td>$2,500 – $5,000</td>
+          <td>Higher quality, longer lasting</td>
+        </tr>
+        <tr>
+          <td>Full Crawl Space Encapsulation</td>
+          <td>$4,500 – $8,500</td>
+          <td>1,200-1,500 sq ft crawl space</td>
+        </tr>
+        <tr>
+          <td>Crawl Space Dehumidifier Installation</td>
+          <td>$1,200 – $2,000</td>
+          <td>Includes 70-90 pint/day unit</td>
+        </tr>
+        <tr>
+          <td>Structural Repair (Floor Joists)</td>
+          <td>$1,500 – $4,000</td>
+          <td>Sistering or replacing sections</td>
+        </tr>
+        <tr>
+          <td>Support Post/SmartJack Installation</td>
+          <td>$300 – $500 each</td>
+          <td>Most homes need 4-8 posts</td>
+        </tr>
+        <tr>
+          <td>Crawl Space Mold Remediation</td>
+          <td>$1,500 – $4,000</td>
+          <td>Depends on coverage area</td>
+        </tr>
+        <tr>
+          <td>French Drain Installation (Perimeter)</td>
+          <td>$3,000 – $6,000</td>
+          <td>Addresses exterior water issues</td>
+        </tr>
+        <tr>
+          <td>Sump Pump Installation</td>
+          <td>$800 – $1,500</td>
+          <td>For crawl spaces with standing water</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p class="price-note">Prices reflect 2025 averages for Florence, Covington, Fort Mitchell, Erlanger, Newport, and surrounding Northern Kentucky cities. Your actual cost depends on crawl space size, access difficulty, existing damage severity, and contractor rates.</p>
+  </ArticleSection>
+  
+  <ArticleSection>
+    <QuestionHeading question="What Factors Affect Crawl Space Repair Cost in NKY?" />
+    
+    <p>Not all crawl spaces cost the same to repair. Here are the biggest factors that drive prices up or down in Northern Kentucky:</p>
+    
+    <ul>
+      <li><strong>Crawl space size.</strong> Obviously, larger spaces cost more. A 2,000 sq ft crawl space costs roughly twice as much to encapsulate as a 1,000 sq ft space. Most NKY homes have 1,200-1,800 sq ft crawl spaces.</li>
+      
+      <li><strong>Access difficulty.</strong> Tight crawl spaces (less than 24 inches clearance) slow work down significantly. Limited access points, narrow entries, or crawl spaces full of old insulation, debris, or HVAC equipment add labor costs.</li>
+      
+      <li><strong>Existing moisture damage.</strong> If your crawl space already has wood rot, mold, or structural damage, those problems must be fixed before encapsulation. Replacing rotted joists or sill plates can double your total project cost.</li>
+      
+      <li><strong>Foundation type.</strong> Poured concrete foundations are easier to seal than block foundations (which have more seams and joints). Stone foundations (common in older NKY homes) require extra prep work.</li>
+      
+      <li><strong>Drainage issues.</strong> If water is entering your crawl space from outside (grading problems, clogged gutters, high water table), you'll need exterior drainage work. French drains, grading corrections, or sump pumps add $1,500-6,000 to your project.</li>
+      
+      <li><strong>HVAC system.</strong> Crawl spaces with furnaces, water heaters, or extensive ductwork require more careful work around equipment. Some encapsulation approaches conflict with combustion appliances (they need fresh air).</li>
+    </ul>
+  </ArticleSection>
+  
+  <div class="callout-box">
+    <h3>💡 Northern Kentucky Climate Considerations</h3>
+    <p>NKY's humid continental climate creates unique crawl space challenges:</p>
+    <ul>
+      <li><strong>Summer humidity:</strong> Regularly exceeds 70%, promoting mold growth and wood rot</li>
+      <li><strong>Clay soils:</strong> Expand and contract with moisture, stressing foundations</li>
+      <li><strong>Freeze-thaw cycles:</strong> Winter temperature swings cause foundation movement</li>
+      <li><strong>Heavy spring rains:</strong> Can overwhelm drainage and flood crawl spaces</li>
+    </ul>
+    <p>These conditions make crawl space moisture control especially important for homes in Florence, Covington, and across Northern Kentucky.</p>
+  </div>
+  
+  <ArticleSection>
+    <QuestionHeading question="Should I Encapsulate My Crawl Space or Just Install a Vapor Barrier?" />
+    
+    <p>This is the most common question we hear from Northern Kentucky homeowners. The short answer: full encapsulation is almost always better for NKY's climate, but vapor barriers alone can work if your crawl space is dry and well-drained.</p>
+    
+    <p><strong>Vapor barrier only ($1,500-3,000):</strong> Covers the ground with 6-10 mil plastic sheeting, reducing moisture evaporation from soil. This approach helps if your only issue is minor ground moisture and you have good ventilation. However, it doesn't address humidity coming through foundation walls, doesn't control air movement, and won't prevent mold in humid summers.</p>
+    
+    <p><strong>Full encapsulation ($4,500-8,500):</strong> Treats your crawl space as a conditioned part of your home. Includes reinforced vapor barrier on floor AND walls, sealed vents, insulated walls, and a dehumidifier. This creates a controlled environment that prevents mold, protects floor joists, reduces energy costs, and eliminates musty odors.</p>
+    
+    <p>In Northern Kentucky's humid climate, full encapsulation makes more sense for most homes. Vapor barriers alone often fail to control humidity adequately, leaving homeowners with continued mold problems and wood rot. The extra $3,000-5,000 for full encapsulation pays for itself through energy savings and avoided repairs within 5-7 years.</p>
+  </ArticleSection>
+  
+  <ArticleSection>
+    <QuestionHeading question="How Do I Know If My Crawl Space Needs Repair?" />
+    
+    <p>Many Northern Kentucky homeowners don't realize they have crawl space problems until significant damage has occurred. Watch for these warning signs:</p>
+    
+    <ul>
+      <li><strong>Musty odors</strong> inside your home (especially on humid days)</li>
+      <li><strong>Sagging or bouncy floors</strong> above the crawl space</li>
+      <li><strong>Visible mold or mildew</strong> on walls, baseboards, or in closets</li>
+      <li><strong>High indoor humidity</strong> even when running AC (above 60%)</li>
+      <li><strong>Increased allergy or asthma symptoms</strong> at home</li>
+      <li><strong>Pest problems</strong> (rodents, termites, or insects entering through crawl space)</li>
+      <li><strong>Higher energy bills</strong> without explanation</li>
+      <li><strong>Standing water</strong> or wet soil in your crawl space after rain</li>
+      <li><strong>Cracks in walls or doors</strong> that stick (suggests foundation movement)</li>
+    </ul>
+    
+    <p>If you notice any of these issues in your Florence, Covington, or Northern Kentucky home, schedule a crawl space inspection. Most contractors offer free inspections and will identify problems before they become expensive repairs.</p>
+  </ArticleSection>
+  
+  <ArticleSection>
+    <QuestionHeading question="Can I Finance Crawl Space Repairs in Northern Kentucky?" />
+    
+    <p>Yes. Many crawl space contractors in NKY offer financing options for larger projects. Typical options include:</p>
+    
+    <ul>
+      <li><strong>Contractor financing:</strong> Many companies partner with lenders offering 12-60 month payment plans. Interest rates vary (0% promotional offers up to 12-18% APR).</li>
+      <li><strong>Home equity loans or HELOCs:</strong> Lower interest rates (currently 7-9% in Kentucky) but require available equity and credit approval.</li>
+      <li><strong>Personal loans:</strong> Quick approval but higher rates (10-20% APR typical).</li>
+      <li><strong>Credit cards:</strong> Last resort due to high rates, but 0% intro APR cards can work for smaller projects if you can pay off quickly.</li>
+    </ul>
+    
+    <p>Given that full encapsulation runs $4,500-8,500, financing makes sense for many NKY homeowners. A 5-year loan at 8% APR for a $6,000 crawl space encapsulation costs about $122/month — often less than the energy savings and avoided repair costs the encapsulation provides.</p>
+  </ArticleSection>
+  
+  <EnhancedFAQ 
+    faqs={articleFAQs}
+    title="Common Questions About Crawl Space Repair Costs in NKY"
+    subtitle="What Northern Kentucky homeowners ask us most"
+  />
+  
+  <div class="cta-section">
+    <h2>Need a Crawl Space Repair Estimate in Northern Kentucky?</h2>
+    <p>Get connected with local contractors serving Florence, Covington, Fort Mitchell, and all of {region}.</p>
+    <a href={`tel:${phoneE164}`} class="cta-btn">Call {phone}</a>
+  </div>
+
+</article>
+
+</BaseLayout>
