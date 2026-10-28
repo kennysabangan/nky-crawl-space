@@ -33,8 +33,8 @@ export interface FAQ {
 export const siteConfig = {
   // ── Business identity ──────────────────────────────────────────────
   businessName: "NKY Crawl Space Pros",
-  phone: "(859) 900-8065",
-  phoneE164: "+18599008065",
+  phone: "(714) 494-9486",
+  phoneE164: "+17144949486",
   domain: "nkycrawlspacepros.com",
   siteUrl: "https://nkycrawlspacepros.com",
 
@@ -118,7 +118,7 @@ export const siteConfig = {
     {
       question: "How much does crawl space encapsulation cost?",
       answer:
-        "Contact us for a free inspection and estimate. Call (859) 900-8065.",
+        "Contact us for a free inspection and estimate. Call (714) 494-9486.",
     },
     {
       question: "How do I know if my crawl space needs repair?",
@@ -148,7 +148,7 @@ export const siteConfig = {
     {
       question: "How do I schedule?",
       answer:
-        "Call (859) 900-8065. We serve Florence, Covington, Fort Thomas, Newport, Fort Mitchell, Erlanger, Edgewood, Independence, and nearby Northern Kentucky communities.",
+        "Call (714) 494-9486. We serve Florence, Covington, Fort Thomas, Newport, Fort Mitchell, Erlanger, Edgewood, Independence, and nearby Northern Kentucky communities.",
     },
   ] as FAQ[],
 
