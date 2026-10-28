@@ -14,7 +14,7 @@ const serviceSchema = {
     "name": businessName,
     "telephone": phoneE164,
   },
-  "areaServed": { "@type": "State", "name": "Kentucky" },
+  "areaServed": cities.map((c) => ({ "@type": "City", "name": c.name })),
   "description": `Professional ${serviceKeywordPlural} including encapsulation, waterproofing, and mold remediation for residential and commercial properties in ${city}.`,
 };
 
@@ -29,7 +29,7 @@ const breadcrumbSchema = {
 ---
 
 <BaseLayout
-  title={`${serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} Services ${city} | ${businessName}`}
+  title={`Crawl Space Repair Service Areas in Northern Kentucky | ${businessName}`}
   description={`${serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} services in ${city}. We provide crawl space encapsulation, waterproofing, and mold remediation for homes and businesses across ${region}. Call ${phone} for a free inspection.`}
   canonicalURL={`${siteUrl}/crawl-space/`}
   schema={[breadcrumbSchema, serviceSchema]}
@@ -76,17 +76,17 @@ const breadcrumbSchema = {
 
   <p>Getting your crawl space repaired by {businessName} is easy. Here's how it works:</p>
 
-  <p><strong>Step 1: Call Us.</strong> Give us a call at {phone} and tell us about your crawl space issues. We'll schedule a free inspection at your convenience.</p>
+  <p><strong>Step 1: Call Us.</strong> Give us a call at {phone} and tell us about your crawl space issues. We'll schedule a free inspection.</p>
 
-  <p><strong>Step 2: Free Inspection.</strong> We'll inspect your crawl space, identify the problems, and provide a detailed written estimate. No pressure, no obligation. Most homeowners are surprised at how affordable professional {serviceKeyword} can be.</p>
+  <p><strong>Step 2: Free Inspection.</strong> We'll inspect your crawl space, identify the problems, and provide a detailed written estimate. No obligation.</p>
 
-  <p><strong>Step 3: We Fix Your Crawl Space.</strong> Our team arrives on time with all the equipment and materials needed to repair your crawl space. We work efficiently and treat your property with respect.</p>
+  <p><strong>Step 3: We Fix Your Crawl Space.</strong> The work in the estimate gets done — vapor barrier, encapsulation, drainage, mold treatment, or structural repair. Most encapsulations take 1-2 days.</p>
 
-  <p><strong>Step 4: Enjoy a Healthier Home.</strong> Your crawl space will be dry, clean, and protected. Not happy with the results? We'll come back and make it right. That's our satisfaction guarantee.</p>
+  <p><strong>Step 4: Enjoy a Healthier Home.</strong> Your crawl space will be dry, clean, and protected. Before the crew leaves, they'll walk you through what was done.</p>
 
   <h2 class="text-brand text-xl md:text-2xl font-bold mb-4 mt-8">{serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} Service Areas</h2>
 
-  <p>We provide {serviceKeywordPlural} across {city}. We serve:</p>
+  <p>Our main service areas in Boone, Kenton, and Campbell counties:</p>
 
   <ul>
     {cities.map((c) => (
