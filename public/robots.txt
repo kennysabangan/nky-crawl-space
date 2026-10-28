@@ -26,4 +26,4 @@ Allow: /
 User-agent: Bytespider
 Disallow: /
 
-Sitemap: https://nkycrawlspacepros.com/sitemap-index.xml
+Sitemap: https://www.nkycrawlspacepros.com/sitemap-index.xml
