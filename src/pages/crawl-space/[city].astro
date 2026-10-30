@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { siteConfig } from '../../config';
+import { siteConfig, pageTitle, costGuide } from '../../config';
 import type { City } from '../../config';
 
 export function getStaticPaths() {
@@ -39,8 +39,8 @@ const stateAbbr = city.name.includes('OH') ? 'OH' : 'KY';
 ---
 
 <BaseLayout
-  title={`${serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} in ${city.name} | ${businessName}`}
-  description={`Need ${serviceKeyword} in ${city.name}? ${businessName} provides crawl space encapsulation, waterproofing, and mold remediation in ${cityName} and all across ${regionCity}. Call ${phone} for a free inspection.`}
+  title={pageTitle(`Crawl Space Repair & Encapsulation in ${city.name}`)}
+  description={`Crawl space repair and encapsulation in ${city.name}: vapor barriers, waterproofing, and mold remediation. Free inspections: ${phone}.`}
   canonicalURL={`${siteUrl}/crawl-space/${city.slug}/`}
   schema={[breadcrumbSchema, cityServiceSchema]}
 >
@@ -364,6 +364,7 @@ const stateAbbr = city.name.includes('OH') ? 'OH' : 'KY';
     <p class="content-text">{city.intro}</p>
     <p class="content-text">We handle crawl space encapsulation, waterproofing, mold remediation, and structural repairs throughout {cityName}. Moisture issues, standing water, mold growth, and sagging floors are usually connected, so the inspection looks at all of them.</p>
     <p class="content-text">Our {serviceKeyword} service in {cityName} starts with a free inspection and a written estimate. Depending on what's found, the fix may include a heavy-duty vapor barrier, a crawl space dehumidifier, a sump pump, or drainage work to keep the crawl space dry year-round.</p>
+    <p class="content-text">Planning a budget? See our <a href={costGuide.href} style="color:#1a6bb5;font-weight:600;">{costGuide.anchor}</a> for typical price ranges by crawl space size.</p>
   </section>
 
   <!-- Mid CTA -->

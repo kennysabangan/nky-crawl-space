@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PhoneCTA from '../../components/PhoneCTA.astro';
-import { siteConfig } from '../../config';
+import { siteConfig, pageTitle, costGuide } from '../../config';
 
 const { businessName, phone, phoneE164, siteUrl, serviceKeyword, serviceKeywordPlural, city, region, services, cities } = siteConfig;
 
@@ -29,8 +29,8 @@ const breadcrumbSchema = {
 ---
 
 <BaseLayout
-  title={`Crawl Space Repair Service Areas in Northern Kentucky | ${businessName}`}
-  description={`${serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} services in ${city}. We provide crawl space encapsulation, waterproofing, and mold remediation for homes and businesses across ${region}. Call ${phone} for a free inspection.`}
+  title={pageTitle("Crawl Space Repair Service Areas in Northern Kentucky")}
+  description={`Crawl space encapsulation, waterproofing, and mold remediation across Northern Kentucky. Free inspections and written estimates: ${phone}.`}
   canonicalURL={`${siteUrl}/crawl-space/`}
   schema={[breadcrumbSchema, serviceSchema]}
 >
@@ -78,7 +78,7 @@ const breadcrumbSchema = {
 
   <p><strong>Step 1: Call Us.</strong> Give us a call at {phone} and tell us about your crawl space issues. We'll schedule a free inspection.</p>
 
-  <p><strong>Step 2: Free Inspection.</strong> We'll inspect your crawl space, identify the problems, and provide a detailed written estimate. No obligation.</p>
+  <p><strong>Step 2: Free Inspection.</strong> We'll inspect your crawl space, identify the problems, and provide a detailed written estimate. No obligation. For typical price ranges before you call, see our <a href={costGuide.href}>{costGuide.anchor}</a>.</p>
 
   <p><strong>Step 3: We Fix Your Crawl Space.</strong> The work in the estimate gets done — vapor barrier, encapsulation, drainage, mold treatment, or structural repair. Most encapsulations take 1-2 days.</p>
 

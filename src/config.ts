@@ -73,7 +73,7 @@ export const siteConfig = {
   brandColor: "#1a6bb5",
 
   // ── Hero content ─────────────────────────────────────────────────
-  heroTagline: "Northern Kentucky Crawl Space Repair Service",
+  heroTagline: "Crawl Space Repair & Encapsulation in Cincinnati & Northern Kentucky",
   heroSubtext: "Protect your home from moisture, mold, and structural damage. Call for a free inspection.",
   heroAlt: "Professional crawl space repair technician at work",
 
@@ -219,4 +219,19 @@ export const siteConfig = {
         "Fort Thomas is known for its stunning hilltop views, historic homes, and tree-canopied streets — but all that elevation change means your crawl space faces extra moisture challenges. NKY Crawl Space Pros provides crawl space repair in Fort Thomas that protects your home's structure and air quality. We're experienced with the unique challenges Fort Thomas presents: steep grades directing water toward foundations, multi-level homes built into hillsides, and clay soils that hold moisture against your foundation walls. Our team handles it all with skill and care, ensuring every crawl space we work on stays dry.",
     },
   ] as City[],
+};
+
+/**
+ * Build a page <title> that stays within 60 characters: the brand name is
+ * appended only when it fits, so the service + place always comes first.
+ */
+export function pageTitle(main: string, max = 60): string {
+  const withBrand = `${main} | ${siteConfig.businessName}`;
+  return withBrand.length <= max ? withBrand : main;
+}
+
+/** Encapsulation cost article, linked from the homepage, service index, and city pages. */
+export const costGuide = {
+  href: "/articles/crawl-space-repair-cost-northern-kentucky/",
+  anchor: "crawl space encapsulation cost guide",
 };

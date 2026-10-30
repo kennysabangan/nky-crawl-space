@@ -5,10 +5,34 @@ import ArticleSection from '../../components/ArticleSection.astro';
 import EnhancedFAQ from '../../components/EnhancedFAQ.astro';
 import { siteConfig } from '../../config';
 
-const { businessName, phone, phoneE164, city, region } = siteConfig;
+const { businessName, phone, phoneE164, city, region, siteUrl } = siteConfig;
 
-const title = `Average Crawl Space Repair Cost in Northern Kentucky (2025 Guide) | ${businessName}`;
-const description = "What does crawl space repair cost in Northern Kentucky? Typical price ranges for encapsulation, vapor barriers, structural repairs, mold remediation, and foundation work in Florence, Covington, and NKY.";
+const title = "Crawl Space Encapsulation Cost (Northern Kentucky Guide)";
+const description = "What crawl space encapsulation costs in Northern Kentucky: typical ranges by crawl space size, plus vapor barrier, dehumidifier, and repair prices.";
+const heading = "How Much Does Crawl Space Encapsulation Cost?";
+const pageUrl = `${siteUrl}/articles/crawl-space-repair-cost-northern-kentucky/`;
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": heading,
+  "description": description,
+  "mainEntityOfPage": pageUrl,
+  "image": `${siteUrl}/og-image.png`,
+  "dateModified": "2026-10-30",
+  "author": { "@type": "Organization", "name": businessName, "url": siteUrl },
+  "publisher": { "@type": "Organization", "name": businessName, "url": siteUrl },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": siteUrl },
+    { "@type": "ListItem", "position": 2, "name": "Crawl Space Repair", "item": `${siteUrl}/crawl-space/` },
+    { "@type": "ListItem", "position": 3, "name": heading, "item": pageUrl },
+  ],
+};
 
 const articleFAQs = [
   {
@@ -46,7 +70,7 @@ const articleFAQs = [
 ];
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} canonicalURL={pageUrl} schema={[articleSchema, breadcrumbSchema]}>
 
 <style>
   .container {
@@ -203,19 +227,84 @@ const articleFAQs = [
 
 <header class="article-header">
   <div class="container">
-    <h1>Average Crawl Space Repair Cost in Northern Kentucky (2025 Guide)</h1>
-    <p>Typical price ranges for crawl space encapsulation, vapor barriers, structural repairs, mold remediation, and foundation work in Florence, Covington, Fort Mitchell, and across NKY.</p>
+    <h1>{heading}</h1>
+    <p>Typical crawl space encapsulation price ranges by crawl space size, plus vapor barrier, dehumidifier, structural repair, and mold remediation costs for Florence, Covington, Fort Mitchell, and across Northern Kentucky.</p>
   </div>
 </header>
 
 <article class="container">
-  
+
   <ArticleSection tag="article">
-    <QuestionHeading question="How Much Does Crawl Space Repair Cost in Northern Kentucky?" />
+    <QuestionHeading question="How Much Does Crawl Space Encapsulation Cost in Northern Kentucky?" />
+
+    <p>Full crawl space encapsulation in Northern Kentucky typically costs $4,500 to $8,500 for an average 1,200-1,500 square foot crawl space. That usually covers a reinforced 10-20 mil vapor barrier on the floor and walls, sealed foundation vents, insulated walls, and a dehumidifier. Size is the biggest driver of price:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Crawl Space Size</th>
+          <th>Typical Encapsulation Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Smaller (around 800 sq ft)</td>
+          <td>$3,000 – $5,500</td>
+        </tr>
+        <tr>
+          <td>Average (1,200-1,500 sq ft)</td>
+          <td>$4,500 – $8,500</td>
+        </tr>
+        <tr>
+          <td>Larger (2,000+ sq ft)</td>
+          <td>$10,000 – $15,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Typical costs for the individual pieces of an encapsulation system:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Encapsulation Component</th>
+          <th>Typical Cost</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Vapor Barrier Only (6 mil)</td>
+          <td>$1,500 – $3,000</td>
+          <td>Ground cover only; small to medium crawl space</td>
+        </tr>
+        <tr>
+          <td>Reinforced Vapor Barrier (10-20 mil)</td>
+          <td>$2,500 – $5,000</td>
+          <td>Higher quality, longer lasting</td>
+        </tr>
+        <tr>
+          <td>Crawl Space Dehumidifier</td>
+          <td>$1,200 – $2,000</td>
+          <td>Installed; 70-90 pint/day unit</td>
+        </tr>
+        <tr>
+          <td>Sump Pump (if there is standing water)</td>
+          <td>$800 – $1,500</td>
+          <td>For crawl spaces with standing water</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="price-note">These are general estimates, not quotes. Your actual cost depends on crawl space size, access difficulty, existing damage, and contractor rates — get a written estimate after an inspection.</p>
+  </ArticleSection>
+
+  <ArticleSection>
+    <QuestionHeading question="What Do Other Crawl Space Repairs Cost in Northern Kentucky?" />
     
     <p>Crawl space repair costs in Northern Kentucky range from $1,500 for a basic vapor barrier to $15,000+ for full encapsulation with structural repairs. The wide range reflects the variety of crawl space problems Northern Kentucky homes face: moisture intrusion from our humid summers, foundation settling in our clay soils, wood rot from inadequate ventilation, and mold growth from chronic dampness.</p>
     
-    <p>Here are typical ranges for common crawl space work in Florence, Covington, Fort Mitchell, and the rest of NKY:</p>
+    <p>Here are typical ranges for common crawl space work, including encapsulation, in Florence, Covington, Fort Mitchell, and the rest of NKY:</p>
     
     <table class="data-table">
       <thead>
@@ -278,7 +367,7 @@ const articleFAQs = [
   </ArticleSection>
   
   <ArticleSection>
-    <QuestionHeading question="What Factors Affect Crawl Space Repair Cost in NKY?" />
+    <QuestionHeading question="What Factors Affect Crawl Space Encapsulation and Repair Cost?" />
     
     <p>Not all crawl spaces cost the same to repair. Here are the biggest factors that drive prices up or down in Northern Kentucky:</p>
     
@@ -358,7 +447,7 @@ const articleFAQs = [
   
   <EnhancedFAQ 
     faqs={articleFAQs}
-    title="Common Questions About Crawl Space Repair Costs in NKY"
+    title="Common Questions About Crawl Space Encapsulation Costs"
     subtitle="Questions Northern Kentucky homeowners commonly ask"
   />
   
