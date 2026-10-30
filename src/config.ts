@@ -133,7 +133,7 @@ export const siteConfig = {
     {
       question: "How long does encapsulation take?",
       answer:
-        "Most homes take 1-2 days. We work fast and clean up completely when we're done.",
+        "A vapor barrier alone usually takes 1-2 days. Full encapsulation with vent sealing, insulation and a dehumidifier typically takes 2-4 days, depending on size and access.",
     },
     {
       question: "Will encapsulation fix my musty smell?",
